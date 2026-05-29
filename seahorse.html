@@ -4,37 +4,84 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
   <title>seahorse serenity</title>
   <style>
-    body {  display: grid;
-  grid-template-columns: 3fr 4fr;
-  grid-template-rows: 200px 1fr 200px;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "Header Header"
-    "Nav Article"
-    "Footer Footer";
-}
+    body {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 3fr 7fr;
+      grid-template-rows: 200px 1fr 200px;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "Header Header"
+        "Nav Article"
+        "Footer Footer";
+    }
 
-header { grid-area: Header; }
+    header {
+      grid-area: Header;
+      background-image: url("seahorse1.jpg");
+      background-size: cover;
+      color: white;
+      font-family: "Monsieur La Doulaise", cursive;
+      font-size: 55px;
+    }
 
-nav { grid-area: Nav; }
+    nav {
+      grid-area: Nav;
+    }
 
-article { grid-area: Article; }
+    article {
+      grid-area: Article;
+    }
 
-footer { grid-area: Footer; }
+    footer {
+      grid-area: Footer;
+      text-align: center;
+    }
 
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
 
+    nav ul li a {
+      text-align: center;
+      color: rgb(34, 226, 117);
+      text-decoration: none;
+      display: block;
+      background: blue;
+      width: 150px;
+      height: 50px;
+      margin: 20px;
+      border: 1px solid green;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px black;
+      transition: box shadow 1s, color .5s, background .5s;
+
+    }
+
+    nav ul li a:hover {
+      background: rgb(64, 188, 255);
+      color: white;
+      box-shadow: 15px 15px 15px
+    }
+
+    footer li {
+      display: inline;
+    }
   </style>
 </head>
 
-<body> 
-
-max-width:1000;
+<body>
   <header>
-    <h1>header info here</h1>
-    <img src="#" alt="seahorses are fun" />
+    <h1>Seahorse</h1>
   </header>
 
   <nav>
@@ -49,7 +96,7 @@ max-width:1000;
   </nav>
 
   <article>
-    <img src="#" alt="seahorses are fun" />
+    <img src="seahorse2.jpg" alt="seahorses are fun" />
     <h1>SEAHORSE FACTS</h1>
     <h2>Name</h2>
     <p>The Latin name for seahorse is Hippocampus which means "Horse
